@@ -17,3 +17,6 @@ composer require barryvdh/laravel-debugbar --dev
 
 set the
 APP DEBUG= true; -during development only 
+
+to publish run the following command 
+php artisan vendor:publish
