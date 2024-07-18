@@ -39,8 +39,10 @@ Route::get('/jobs/{id}', function ($id) {
 
 
 Route::post('/jobs', function () {
-    
-    // dd(request(['title'])->all());
+    $request()->validate([
+
+    ]);
+
     Job::create([
         'title'=>request('title'),
         'salary'=>request('salary'),
