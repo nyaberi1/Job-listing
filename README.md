@@ -25,3 +25,6 @@ php artisan vendor:publish
 
 seederr- created JobSeeder
 php artisan db:seed --class=JobSeeder
+
+forms creating 
+Cross-Site Request Forgery(csrf)-to prevent attack from malicious software by hackers
