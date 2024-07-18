@@ -20,3 +20,8 @@ APP DEBUG= true; -during development only
 
 to publish run the following command 
 php artisan vendor:publish
+
+
+
+seederr- created JobSeeder
+php artisan db:seed --class=JobSeeder
