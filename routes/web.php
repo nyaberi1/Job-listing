@@ -4,8 +4,7 @@ use Illuminate\Support\Facades\Route;
 use PHPUnit\Framework\MockObject\ReturnValueNotConfiguredException;
 use Illuminate\Support\Arr;
 use App\Models\Job;
-
-
+use Symfony\Contracts\Service\Attribute\Required;
 
 Route::get('/', function () {
     return view('home');
@@ -39,7 +38,9 @@ Route::get('/jobs/{id}', function ($id) {
 
 
 Route::post('/jobs', function () {
-    $request()->validate([
+    request()->validate([
+        'title'=> ['required', 'min:3'],
+        'salary'=> ['required'],
 
     ]);
 

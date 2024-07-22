@@ -1,30 +1,32 @@
 #installation
-composer install 
-cp .env.exmple  .env
+composer install
+cp .env.exmple .env
 php artisan key: generate
 
-
-php namespace resolver extension - to import  classes
+php namespace resolver extension - to import classes
 
 install table plus application
-Eloquent 
+Eloquent
 ORM-maps an object in your database
-//eager loading and the N+1  problem
+//eager loading and the N+1 problem
 
-installed the following package 
+installed the following package
 composer require barryvdh/laravel-debugbar --dev
 
-
 set the
-APP DEBUG= true; -during development only 
+APP DEBUG= true; -during development only
 
-to publish run the following command 
+to publish run the following command
 php artisan vendor:publish
-
-
 
 seederr- created JobSeeder
 php artisan db:seed --class=JobSeeder
 
-forms creating 
+forms creating
 Cross-Site Request Forgery(csrf)-to prevent attack from malicious software by hackers
+
+error handling
+
+<!--    @error('title')
+                         <p class="text-xs text-red-500 font-semibold">   {{ $message }}</p>
+                            @enderror -->
