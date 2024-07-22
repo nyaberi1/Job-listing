@@ -27,6 +27,4 @@ Cross-Site Request Forgery(csrf)-to prevent attack from malicious software by ha
 
 error handling
 
-<!--    @error('title')
-                         <p class="text-xs text-red-500 font-semibold">   {{ $message }}</p>
-                            @enderror -->
+stopped at 4:02:51
