@@ -10,9 +10,7 @@ use Symfony\Contracts\Service\Attribute\Required;
 Route::view('/', 'home');
 Route::view('/contact', 'contact');
 
-
-
-
 Route::resource('jobs', JobController::class);
 
 
+ 
