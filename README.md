@@ -25,6 +25,4 @@ php artisan db:seed --class=JobSeeder
 forms creating
 Cross-Site Request Forgery(csrf)-to prevent attack from malicious software by hackers
 
-error handling
-
-delete done 
+component generated
