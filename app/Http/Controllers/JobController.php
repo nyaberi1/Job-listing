@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Job;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class JobController extends Controller
 {
@@ -47,6 +48,19 @@ class JobController extends Controller
 
     //edit
     public function edit(Job $job){
+        //sing in authorizayion
+        if(Auth::guest()){
+            return redirect('/login');
+        }
+
+
+        //Only the creator can edit the  job he/she Posted
+        if($job->employer->user->isNot(Auth::user())){
+            abort(403);
+
+        }
+
+
         return view('jobs.edit', ['job' => $job]);
 
     }
