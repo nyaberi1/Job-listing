@@ -29,6 +29,7 @@ class AppServiceProvider extends ServiceProvider
         Gate::define('edit-job', function (User $user, Job $job) {
             //Only the creator can edit the  job he/she Posted
            return $job->employer->user->is($user);
-        });
+        }); 
+       
     }
 }
