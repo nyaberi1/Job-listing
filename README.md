@@ -29,3 +29,4 @@ component generated
 
 gates 5:36minutes
 learn laravel named routed- naming your routes
+Policies

@@ -26,10 +26,10 @@ class AppServiceProvider extends ServiceProvider
     {
         Model::preventLazyLoading();
 
-        Gate::define('edit-job', function (User $user, Job $job) {
+      /*   Gate::define('edit-job', function (User $user, Job $job) {
             //Only the creator can edit the  job he/she Posted
            return $job->employer->user->is($user);
         }); 
-       
+        */
     }
 }
