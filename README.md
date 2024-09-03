@@ -30,3 +30,8 @@ component generated
 gates 5:36minutes
 learn laravel named routed- naming your routes
 Policies
+
+Environment File: Includes configuration vlaues that may differ based on whether your application is running locally or in production.\
+
+
+Mailtrap- to handle emails 

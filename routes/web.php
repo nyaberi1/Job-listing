@@ -9,6 +9,14 @@ use App\Http\Controllers\RegisterdUserController;
 use Symfony\Contracts\Service\Attribute\Required;
 use PHPUnit\Framework\MockObject\ReturnValueNotConfiguredException;
 
+
+/* Route::get('test', function(){
+    \Illuminate\Support\Facades\Mail::to('kjoshuan001@gmail.com')->send(
+        new \App\Mail\JobPosted()
+    );
+    return 'Done';
+}); */
+
 Route::view('/', 'home');
 Route::view('/contact', 'contact');
 
