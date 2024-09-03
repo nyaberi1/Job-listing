@@ -35,3 +35,7 @@ Environment File: Includes configuration vlaues that may differ based on whether
 
 
 Mailtrap- to handle emails 
+
+Assest bundling in git using vite 
+Hot Reloading: instant updates without reloading the page or losing application state
+
