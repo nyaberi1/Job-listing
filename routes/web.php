@@ -6,16 +6,19 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\JobController;
 use App\Http\Controllers\SessionController;
 use App\Http\Controllers\RegisterdUserController;
+use App\Jobs\TranslateJob;
 use Symfony\Contracts\Service\Attribute\Required;
 use PHPUnit\Framework\MockObject\ReturnValueNotConfiguredException;
 
 
-/* Route::get('test', function(){
-    \Illuminate\Support\Facades\Mail::to('kjoshuan001@gmail.com')->send(
-        new \App\Mail\JobPosted()
-    );
+Route::get('test', function(){
+    $job = Job::first();
+   
+  TranslateJob::dispatch($job);
+
     return 'Done';
-}); */
+}); 
+
 
 Route::view('/', 'home');
 Route::view('/contact', 'contact');
